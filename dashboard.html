@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Everyone helped here :)*/
+        body {
+         margin: 0;
+         display: flex;
+         font-family: 'Segoe UI', Tahoma, sans-serif;
+         background-color: #6610f2;
+        min-height: 100vh;
+        }
+
+        nav {
+         background-color: #ffb35c;
+         width: 250px;
+         padding: 40px 15px;
+         display: flex;
+         flex-direction: column;
+          flex-shrink: 0;
+         box-shadow: 4px 0 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            gap: 10px; 
+        }
+
+        .nav-link-custom {
+        color: #2b1d52;
+         text-decoration: none;
+         font-weight: bold;
+         padding: 12px 20px;
+        border-radius: 12px;
+        }
+
+        .nav-link-custom:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #000; /*so the buttons are more pronounced on the sidebar when you click it*/
+        }
+
+        .logout-link {
+            color: #d00; 
+            border-top: 1px solid rgba(0,0,0,0.1);
+            margin-top: 10px;
+            padding-top: 20px;
+        }
+
+        /* styling for the actual dashboard */
+        main {
+            flex-grow: 1;
+            padding: 60px;
+            color: white;
+            overflow-y: auto;
+        }
+
+        .content-card {
+          background-color: #ffffd1;
+         color: #333;
+        padding: 40px;
+        border-radius: 20px;
+        max-width: 800px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .q-highlight {
+         background-color: #3fe0f1;
+         padding: 2px 10px;
+         font-weight: bold;
+         display: inline-block;
+         margin-bottom: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #bbb;
+            text-align: center;
+            padding: 12px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: calc(100% - 250px); /*good job to whoever did this*/
+            font-size: 0.8rem;
+        }
+    </style>
+    </head>
+    <body>
+
+    <nav>
+        <div class="text-center mb-5">
+            <img src="C:\Users\chere\Downloads\3265e787-f435-4aa9-97e7-2388f6029cd1-removebg-preview.png" alt="Logo" width="100">
+        </div>
+        
+    
+        <div class="nav-menu">
+            <a href="dashboard.html" class="nav-link-custom active-link">Dashboard</a>
+            <a href="notebooks.html" class="nav-link-custom">Virtual Notebooks</a>
+            <a href="tasks.html" class="nav-link-custom">Tasks</a>
+            <a href="profile.html" class="nav-link-custom">Profile</a>
+            <a href="index.html" class="nav-link-custom logout-link">Logout</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1 class="display-4 fw-bold">Dashboard</h1>
+        <p class="fs-5 opacity-75">Quarterly Work Plan</p>
+
+        <div class="content-card mt-4">
+            <h2 class="fw-bold" style="color: #008fa1;">Information and Communications Technology</h2>
+            <p><u><b>The Curriculum</b></u></p>
+
+            <div class="mt-4">
+              <span class="q-highlight">I. 1st Quarter</span>
+               <ul class="mb-4">
+                  <li>Introduction to HTML</li>
+                <li>Basic CSS Styling</li>
+                  <li>Quarter Project</li>
+                </ul>
+
+                <span class="q-highlight">II. 2nd Quarter</span>
+                <ul class="mb-4">
+                    <li>Introduction to Bootstrap</li>
+                    <li>Bootstrap with Forms</li>
+                    <li>Quarter Project</li>
+                </ul>
+
+                <span class="q-highlight">III. 3rd Quarter</span>
+                <ul class="mb-4">
+                    <li>Introduction to JavaScript</li>
+                    <li>Data types, operators and variables</li>
+                    <li>Functions and events</li>
+                    <li>Quarter Project</li>
+                </ul>
+
+                <span class="q-highlight">IV. 4th Quarter</span>
+                <ul>
+                    <li>Conditional Statements</li>
+                    <li>Iteration Statements</li>
+                    <li>Quarter Project</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Created by: Cheree Mendoza, Zoey Ledres, Princess Schwab, Elise Ramos | 9 - Topaz | Source: gemini.google.com
+    </footer>
+
+</body>
+</html>
